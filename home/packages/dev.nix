@@ -1,0 +1,48 @@
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    neovim
+    vim
+    git
+    cmake
+    gcc
+    gcc-arm-embedded
+    gnumake
+    clang-tools
+    bear
+    stlink
+    openocd
+    ghdl
+    gtkwave
+    iverilog
+    tree-sitter
+    pyright
+    nodePackages.typescript-language-server
+    nodePackages.vscode-langservers-extracted
+    go
+    cargo
+    luarocks
+    python3
+    libtool
+    autoconf
+    automake
+    pkg-config
+    wine64
+    bc
+    wget
+    curl
+    jq
+    fd
+    ripgrep
+    fzf
+    unzip
+    ffmpeg
+    grim
+    slurp
+    wl-clipboard
+    tmux
+    bluez
+    pulseaudio
+    playerctl
+  ];
+}
